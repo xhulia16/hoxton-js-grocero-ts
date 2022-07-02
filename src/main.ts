@@ -1,7 +1,7 @@
 import './style.css'
 import './reset.css'
 
-type StoreItem {
+type StoreItem = {
   id: number;
   name: string;
   price: number;
