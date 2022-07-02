@@ -81,12 +81,12 @@ function increaseQuantity(item: StoreItem) {
   item.inCart++
 }
 
-function decreaseQuantity(item) {
+function decreaseQuantity(item: StoreItem) {
   if (item.inCart === 0) return
   item.inCart--
 }
 
-function getImagePath(item) {
+function getImagePath(item: StoreItem) {
   let id = String(item.id).padStart(3, '0') // instead of 1 --> 001
   return `assets/icons/${id}-${item.name}.svg`
 
